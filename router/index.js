@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../src/views/HomeView.vue";
 import LoginView from "../src/views/LoginView.vue";
 import AboutView from "../src/views/AboutView.vue";
-import QuoteView from "../src/views/AddQuoteView.vue/index.js";
+import QuoteView from "../src/views/AddQuoteView.vue";
 
 const routes = [
     {
