@@ -1,0 +1,35 @@
+import { createRouter, createWebHistory } from "vue-router";
+import HomeView from "../src/views/HomeView.vue";
+import LoginView from "../src/views/LoginView.vue";
+import AboutView from "../src/views/AboutView.vue";
+import QuoteView from "../src/views/AddQuoteView.vue";
+
+const routes = [
+    {
+        path: '/',
+        component: HomeView,
+        name: 'main'
+    },
+    {
+        path:'/login',
+        component: LoginView,
+        name: 'login'
+    },
+    {
+        path:'/about',
+        component: AboutView,
+        name: 'about'
+    },
+    {
+        path: '/quote',
+        component: QuoteView,
+        name: 'quote'
+    }
+];
+
+const router = createRouter({
+    history: createWebHistory(),
+    routes
+});
+
+export default router;
