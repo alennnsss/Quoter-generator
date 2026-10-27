@@ -1,10 +1,11 @@
 <template>
   <header>
-    <div class="header-title">
-      <h1 class="header-title__blue">Quote</h1>
-      <h1 class="header-title__black">Generator</h1>
-    </div>
-
+    <router-link to="/" class="main-page">
+      <div class="header-title">
+        <h1 class="header-title__blue">Quote</h1>
+        <h1 class="header-title__black">Generator</h1>
+      </div>
+    </router-link>  
     <div class="header-right">
       <button class="menu-btn" aria-label="Открыть меню" @click="menuOpen = !menuOpen">
         <img src="../assets/menu.png" alt="" class="menu-img">
@@ -117,5 +118,9 @@ header {
       }
     }
   }
+}
+.main-page {
+    text-decoration: none;
+    
 }
 </style>
